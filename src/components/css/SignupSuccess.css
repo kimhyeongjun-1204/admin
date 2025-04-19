@@ -1,0 +1,70 @@
+.signup-success-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #171221;
+}
+
+.success-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+.message-container {
+  text-align: center;
+  width: 100%;
+}
+
+.message-container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  line-height: 0.9375;
+}
+
+.message-container p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 36px 16px 8px;
+  line-height: 1.5;
+}
+
+.confirm-button {
+  width: 139px;
+  height: 40px;
+  background: #3B1AE5;
+  border-radius: 12px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0 16px;
+  margin: 29px 16px 12px;
+}
+
+.confirm-button:hover {
+  background-color: #4B2AF5;
+}
+
+@media (max-width: 768px) {
+  .message-container h1 {
+    font-size: 28px;
+  }
+  
+  .message-container p {
+    font-size: 18px;
+  }
+} 

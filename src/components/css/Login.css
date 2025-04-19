@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #171221;
+}
+
+.login-page {
+  min-height: 100vh;
+  background-color: #171221;
+  color: #171221;
+}
+
+.top-header {
+  border-bottom: 1px solid #171221;
+  padding: 12px 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.plus-icon {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171221;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171221;
+  line-height: 1.28em;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px 160px;
+}
+
+.login-content {
+  width: 960px;
+  padding: 20px 0;
+}
+
+.login-header {
+  padding: 20px 16px 12px;
+  text-align: center;
+}
+
+.login-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.27em;
+  color: #FFFFFF;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 250px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  width: 448px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+.form-group input {
+  width: 100%;
+  height: 48px;
+  padding: 15px;
+  background-color: #1F1A33;
+  border: 1px solid #3D3366;
+  border-radius: 12px;
+  color: #9C94C7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.form-group input::placeholder {
+  color: #9C94C7;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3B1AE5;
+}
+
+.login-button {
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  background-color: #3B1AE5;
+  border: none;
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31em;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #2E15B3;
+}
+
+.signup-link {
+  text-align: center;
+  padding: 4px 16px 12px;
+  margin-top: 12px;
+}
+
+.signup-link a {
+  color: #9C94C7;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.auto-login {
+  display: flex;
+  align-items: center;
+  color: #666666;
+  cursor: pointer;
+}
+
+.auto-login input[type="checkbox"] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.find-links {
+  display: flex;
+  align-items: center;
+}
+
+.find-links a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.find-links .divider {
+  width: 1px;
+  height: 12px;
+  background-color: #E5E5E5;
+  margin: 0 12px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.register-button {
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+.social-login {
+  text-align: center;
+}
+
+.social-login p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-buttons button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.social-buttons img {
+  width: 48px;
+  height: 48px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+  
+  .button-group {
+    margin-bottom: 24px;
+  }
+}
+
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+} 

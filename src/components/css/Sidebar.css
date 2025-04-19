@@ -1,0 +1,110 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.menu-section {
+  flex: 1;
+  padding: 24px 0;
+  overflow-y: auto;
+}
+
+.menu-title {
+  font-size: 14px;
+  color: #9C94C7;
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #4b5563;
+}
+
+.menu-item:hover {
+  background-color: #f3f4f6;
+}
+
+.menu-item.active {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.menu-icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.submenu-items {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #4b5563;
+}
+
+.submenu-item:hover {
+  background-color: #f3f4f6;
+}
+
+.submenu-item .menu-icon {
+  font-size: 16px;
+}
+
+.submenu-item .menu-text {
+  font-size: 14px;
+} 

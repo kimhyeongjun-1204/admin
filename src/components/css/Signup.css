@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+.signup-page {
+  min-height: 100vh;
+  background-color: #171221;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top-header {
+  background-color: #171221;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E5E8EB;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-icon {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.signup-content {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 20px 250px;
+}
+
+.signup-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.error-message {
+  padding: 12px;
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #DC2626;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.form-group input {
+  height: 40px;
+  padding: 15px;
+  background-color: #1F1A33;
+  border: 1px solid #3D3366;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  color: #9C94C7;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3B1AE5;
+}
+
+.form-group input::placeholder {
+  color: #9C94C7;
+}
+
+.button-group {
+  display: flex;
+  height: 80px;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.submit-button,
+.cancel-button {
+  flex: 1;
+  height: 80px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button {
+  background-color: #3B1AE5;
+  color: #FFFFFF;
+}
+
+.submit-button:hover {
+  background-color: #2E15B3;
+}
+
+.cancel-button {
+  background-color: #292447;
+  color: #FFFFFF;
+}
+
+.cancel-button:hover {
+  background-color: #1F1A33;
+} 
