@@ -1,11 +1,11 @@
 .sidebar {
   width: 280px;
-  height: 100vh;
-  background-color: #ffffff;
+  height: calc(100vh - 64.8px);
+  background-color: #171221;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   left: 0;
-  top: 0;
+  top: 64.8px;
   display: flex;
   flex-direction: column;
 }
@@ -21,13 +21,14 @@
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: #1f2937;
+  color: #fff;
 }
 
 .menu-section {
   flex: 1;
   padding: 24px 0;
   overflow-y: auto;
+  min-height: 0;
 }
 
 .menu-title {
@@ -41,6 +42,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding-bottom: 16px;
 }
 
 .menu-item {
@@ -49,16 +51,18 @@
   padding: 12px 24px;
   cursor: pointer;
   transition: background-color 0.2s;
-  color: #4b5563;
+  color: #ffffff;
 }
 
 .menu-item:hover {
-  background-color: #f3f4f6;
+  background-color: #332447;
+  border-radius: 12px;
 }
 
 .menu-item.active {
-  background-color: #f3f4f6;
-  color: #1f2937;
+  background-color: #332447;
+  border-radius: 12px;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -94,11 +98,19 @@
   padding: 8px 24px;
   cursor: pointer;
   transition: background-color 0.2s;
-  color: #4b5563;
+  color: #ffffff;
 }
 
 .submenu-item:hover {
-  background-color: #f3f4f6;
+  background-color: #332447;
+  border-radius: 12px;
+}
+
+.submenu-item.active {
+  background-color: #332447;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .submenu-item .menu-icon {
@@ -107,4 +119,27 @@
 
 .submenu-item .menu-text {
   font-size: 14px;
+}
+
+.logout-section {
+  background-color: #6E12ED;
+  padding: 16px;
+  margin: 0 16px 16px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.logout-section:hover {
+  opacity: 0.9;
+}
+
+.logout-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #6E12ED;
+  display: block;
+  line-height: 1.7857142857142858em;
 } 

@@ -31,8 +31,15 @@ const Login = () => {
       const response = await login(formData.id, formData.password);
       
       if (response.result_code === 201) {
+        localStorage.setItem('token', response.login_token);
+        localStorage.setItem('adminName', response.admin_name);
+        localStorage.setItem('adminId', response.admin_id);
+        console.log(localStorage.getItem('adminId'));
         navigate('/dashboard');
-      } else {
+      } else if(response.result_code === 402){
+        setErrorMessage(response.message || '관리자의 승인 이후 로그인 가능합니다다');
+        setShowError(true);
+      }else {
         setErrorMessage(response.message || '아이디 또는 비밀번호가 일치하지 않습니다');
         setShowError(true);
       }

@@ -1,0 +1,73 @@
+.user-detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(23, 18, 33, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.user-detail-modal {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  padding: 32px;
+  width: 500px;
+}
+
+.user-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.user-detail-header h2 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #171221;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #171221;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.user-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.detail-item .label {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #171221;
+}
+
+.detail-item .value {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #171221;
+} 

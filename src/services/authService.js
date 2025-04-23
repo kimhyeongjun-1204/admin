@@ -1,5 +1,4 @@
 import api from './api';
-
 // 토큰 저장
 export const setToken = (token) => {
   localStorage.setItem('token', token);
@@ -36,7 +35,8 @@ export const login = async (username, password) => {
 
 export const logout = async () => {
   try {
-    await api.post('/admin/logout');
+    const adminId = localStorage.getItem('adminId');
+    await api.post('/admin/logout', { admin_id: adminId });
   } catch (error) {
     console.error('Logout error:', error);
   } finally {

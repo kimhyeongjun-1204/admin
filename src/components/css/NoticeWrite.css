@@ -1,0 +1,123 @@
+.notice-write {
+  padding: 20px 24px;
+  background-color: #171221;
+  color: #FFFFFF;
+  width: 80%;
+  margin-left: 10%;
+  min-height: 100vh;
+}
+
+.write-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.write-header h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-right: 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #332447;
+}
+
+.write-content {
+  background-color: #171221;
+  border-radius: 8px;
+}
+
+.write-form {
+  background-color: #241A33;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #B8B8B8;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px;
+  background-color: #332447;
+  border: 1px solid #473366;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6E12ED;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 300px;
+  width: 900px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.submit-button, .edit-button, .cancel-button {
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button {
+  background-color: #6E12ED;
+  color: #FFFFFF;
+}
+
+.edit-button {
+  background-color: #6E12ED;
+  color: #FFFFFF;
+}
+
+.cancel-button {
+  background-color: #473366;
+  color: #FFFFFF;
+}
+
+.submit-button:hover, .edit-button:hover, .cancel-button:hover {
+  opacity: 0.9;
+} 

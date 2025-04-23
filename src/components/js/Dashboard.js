@@ -1,48 +1,12 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { logout } from '../../services/authService';
+import React from 'react';
 import Sidebar from './Sidebar';
+import TopHeader from './TopHeader';
 import '../css/Dashboard.css';
 
 const Dashboard = () => {
-  const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleLogout = () => {
-    logout();
-    navigate('/login');
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div className="dashboard">
-      <div className="top-header">
-        <div className="header-content">
-          <div className="logo-section">
-            <div className="logo-container">
-              <span className="plus-icon">+</span>
-            </div>
-            <span className="logo-text">AI Groove</span>
-          </div>
-          <div className="header-right">
-            <div className="user-menu" onClick={toggleMenu}>
-              <span className="user-name">관리자</span>
-              <span className={`dropdown-icon ${isMenuOpen ? 'open' : ''}`}>▼</span>
-              {isMenuOpen && (
-                <div className="dropdown-menu">
-                  <div className="dropdown-item" onClick={handleLogout}>
-                    로그아웃
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-      
+      <TopHeader />
       <div className="dashboard-content">
         <Sidebar />
         

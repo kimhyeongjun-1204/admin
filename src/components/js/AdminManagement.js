@@ -6,7 +6,7 @@ import { SERVER_URL } from '../../config/config';
 import Pagination from './Pagination';
 import ErrorPopup from './ErrorPopup';
 import ConfirmPopup from './ConfirmPopup';
-
+import TopHeader from './TopHeader';
 const AdminManagement = () => {
   // admins => 승인된 관리자, pendingAdmins => 승인 대기 관리자
   const [admins, setAdmins] = useState([]);
@@ -172,6 +172,8 @@ const AdminManagement = () => {
       await handleAdminApprove(selectedAdminId);
     } else if (isRejectAction) {
       await handleAdminReject(selectedAdminId);
+    } else {
+      await handleRemoveAdmin(selectedAdminId);
     }
     setShowConfirmPopup(false);
     setSelectedAdminId(null);
@@ -213,9 +215,10 @@ const AdminManagement = () => {
 
   return (
     <div className="admin-layout">
+      <TopHeader />
       <Sidebar />
       <div className="admin-content">
-        <h2 className="section-title">관리자 목록</h2>
+        {/* <h2 className="section-title">관리자 목록</h2> */}
         <div className="admin-section">
           <h2 className="section-title">관리자 목록 ({admins.length}명)</h2>
           <table>
